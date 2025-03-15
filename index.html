@@ -1,260 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>My Bio</title>
+<head>
+  <link rel="icon" href="user-solid.svg" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stelios Loutatidis - Web Developer</title>
     <link rel="stylesheet" href="index.css">
-  </head>
-<body class="w3-light-grey">
-
-<!-- Language Switcher -->
-<div class="language-switcher">
-  <button class="w3-bar-item w3-button" id="languageButtonEN" title="Click to switch to English" onclick="switchLanguage('en')">🇬🇧</button>
-  <button class="w3-bar-item w3-button" id="languageButtonGR"title="Click to switch to Greek" onclick="switchLanguage('gr')">🇬🇷</button>
-</div>
-
-<!-- Page Container -->
-<div id="content" class="content w3-content w3-margin-top" style="max-width:1400px;">
- 
-<!-- English Content -->
-<div id="englishContent" class="language-content active">
-  <div class="w3-row-padding">
-    <!-- Left Column -->
-    <div class="w3-third">
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="deluta.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottommiddle w3-container w3-text-black">
-            <h3 style="font-weight: 1000; white-space:nowrap; color: #009688; cursor:default; pointer-events:none;">Stelios Loutatidis</h3>
-          </div>
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze&family=Niconne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <img src="deluta.jpg" alt="Stelios Loutatidis" class="profile-image">
+            <h1>Stelios Loutatidis</h1>
+            <h2>Web Developer</h2>
+            <p>Passionate web developer specializing in modern front-end and back-end technologies. Creating seamless user experiences with clean, efficient code.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/stelios-loutatidis-03b95929a" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/LutacStelios" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
         </div>
-        <div class="w3-container">
-          <p id="job_title"><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Web Developer</p>
-          <p id="location"><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Thessaloniki 🇬🇷</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><a id="email" href="mailto:stelios_tsita@hotmail.com">stelios_tsita@hotmail.com</a></p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><a id="phone_number" href="tel:+30 6975368445">+30 6975368445</a></p>
-          <hr>
-
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p style="text-align:center;">HTML</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:95%">&nbsp;</div>
-          </div>
-          <p style="text-align:center;">CSS</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">&nbsp;</div>
-          </div>
-          <p style="text-align:center;">JavaScript</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">&nbsp;</div>
-          </div>
-          <p style="text-align:center;">PHP</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">&nbsp;</div>
-          </div>
-          <p style="text-align:center;">WordPress</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">&nbsp;</div>
-          </div>
-          <p style="text-align:center;">OpenCart</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">&nbsp;</div>
-          </div>
-          <p style="text-align:center;">Angular</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">&nbsp;</div>
-          </div>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p style="text-align:center;">Greek</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-          </div>
-          <p style="text-align:center;">English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:90%"></div>
-          </div>
-          
-          <br>
+        <div class="content">
+            <h2 class="text-center fw-bold">About Me</h2>
+            <div class="aboutme">
+                <p>Hi! 👋 I'm Stelios, a web developer based in Thessaloniki Greece. I enjoy creating websites that are both visually appealing and functional. I have experience with a variety of web technologies, including HTML, CSS, JavaScript, PHP, and MySQL. I am always looking to learn new things and improve my skills. When I'm not coding, you can find me playing video games 💻, playing billiards 🎱, or spending time with my family.</p>
+            </div>
+            <h2 class="text-center fw-bold" style="margin-top: 40px;">Projects</h2>
+            <div class="projects">
+                <div class="project" onclick="window.open('https://www.netconnect.gr', '_blank')">
+                    <img src="nclogo.png" alt="Project 1">
+                    <div class="overlay">Made with OpenCart!</div>
+                </div>
+                <div class="project" onclick="window.open('https://www.pcshop.gr', '_blank')">
+                    <img src="pcshop.png" alt="Project 2">
+                    <div class="overlay">Made with OpenCart!</div>
+                </div>
+                <div class="project" onclick="window.open('https://upmate.gr', '_blank')">
+                    <img src="upmate.png" alt="Project 3">
+                    <div class="overlay">Made with CustomCMS!</div>
+                </div>
+                <div class="project" onclick="window.open('https://efantasy.gr', '_blank')">
+                  <img src="efantasy.png" alt="Project 4">
+                  <div class="overlay">Made with CustomCMS!</div>
+              </div>
+            </div>
+            <div class="contactinfo">
+              <h2 class="fw-bold">Contact Me</h2>
+              <a href="mailto:stelios_tsita@hotmail.com" title="Click to send me an email!"><i class="fa-regular fa-envelope"></i></a>
+              <a href="https://www.facebook.com/SteliosLutac"><i class="fa-brands fa-facebook"></i></a>
+            </div>
         </div>
-      </div><br>
     </div>
-    <!-- End Left Column -->
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Professional Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2023 - Apr 2024</h6>
-          <p>During my internship from February 2023 to August 2023, I gained hands-on experience in the dynamic field of web development. I successfully utilized my skills in HTML, CSS, JavaScript, PHP, WordPress, and Opencart to contribute to the creation and enhancement of attractive and functional websites. Throughout this period, I collaborated with a talented team to bring innovative ideas to life, ensuring seamless user experiences and efficient back-end operations. This internship not only improved my technical skills but also fueled my passion for creating digital solutions that leave a lasting impression.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Websites I Created!</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2023 - Apr 2024</h6>
-           <ul class="custom-list">
-            <li><a title="Click to open in a new tab!" class="w3-text-teal" onclick="newTab('https://maknep.gr')">https://maknep.gr (WordPress)</a></li>
-            <li><a title="Click to open in a new tab!" class="w3-text-teal" onclick="newTab('https://ionianmode.com')" >https://ionianmode.com (WordPress)</a></li>
-            <li><a title="Click to open in a new tab!" class="w3-text-teal" onclick="newTab('https://www.pcshop.gr')" >https://www.pcshop.gr (OpenCart)</a></li>
-            <li><a title="Click to open in a new tab!" class="w3-text-teal" onclick="newTab('https://eyetech.gr')" >https://eyetech.gr (OpenCart)</a></li>
-            <li><a title="Click to open in a new tab!" class="w3-text-teal" onclick="newTab('https://netconnect.gr')" >https://netconnect.gr (OpenCart)</a></li>
-          </ul>
-
-          <hr>
-        </div>
-        
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>IEK AKMI Thessaloniki ®</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2020 - Jun 2021</h6>
-           <h1>Summary of My Experience at Vocational School</h1>
-    <p>During my one-year study at the vocational school, I dedicated myself to acquiring comprehensive knowledge and skills in the field of web development. I explored a wide range of essential tools and technologies, including:</p>
-    <ul>
-      <li><strong>HTML, CSS & JavaScript:</strong> By studying these programming languages, I gained a deep understanding of the structure and presentation of websites. I created dynamic and engaging websites that offer smooth navigation and tangible results.</li>
-      <li><strong>PHP:</strong> By studying and applying the PHP programming language, I developed skills in building dynamic websites with capabilities to interact with databases, ensuring efficient performance and user interaction.</li>
-      <li><strong>WordPress:</strong> I gained advanced knowledge in installing, customizing, and managing the WordPress content management system. I created custom themes, plugins, and functionalities, ensuring full control and flexibility for website development.</li>
-      <li><strong>Opencart:</strong> I excelled in creating and customizing e-commerce stores using Opencart. I became familiar with product creation, inventory management, and order processing, enhancing the customer experience. I also worked with the most famous theme in Opencart, Journal. I created custom extensions for existing OpenCart themes.</li>
-    </ul>
-          <hr>
-        </div>
-        
-      </div>
-    </div>
-    <!-- End Right Column -->
-  </div>
-  <!-- End Grid -->
-</div>
-</div>
-
-
-  <!-- Greek Content -->
-  <div id="greekContent" class="language-content" style="display:none;">
-    <div class="w3-row-padding">
-      <!-- Left Column -->
-      <div class="w3-third">
-        <div class="w3-white w3-text-grey w3-card-4">
-          <div class="w3-display-container">
-            <img src="deluta.jpg" style="width:100%" alt="Avatar">
-            <div class="w3-display-bottommiddle w3-container w3-text-black">
-              <h3 style="font-weight: 1000; white-space:nowrap; color: #009688; cursor:default; pointer-events:none;">Λουτατίδης Στέλιος</h3>
-            </div>
-          </div>
-          <div class="w3-container">
-            <p id="job_title"><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Προγραμματιστής Ιστού</p>
-            <p id="location"><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Θεσσαλονίκη 🇬🇷</p>
-            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><a id="email" href="mailto:stelios_tsita@hotmail.com">stelios_tsita@hotmail.com</a></p>
-            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><a id="phone_number" href="tel:+30 6975368445">+30 6975368445</a></p>
-            <hr>
-          
-            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Δεξιότητες</b></p>
-            <p style="text-align:center;">HTML</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:95%">&nbsp;</div>
-            </div>
-            <p style="text-align:center;">CSS</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">&nbsp;</div>
-            </div>
-            <p style="text-align:center;">JavaScript</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">&nbsp;</div>
-            </div>
-            <p style="text-align:center;">PHP</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">&nbsp;</div>
-            </div>
-            <p style="text-align:center;">WordPress</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">&nbsp;</div>
-            </div>
-            <p style="text-align:center;">OpenCart</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">&nbsp;</div>
-            </div>
-            <p style="text-align:center;">Angular</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">&nbsp;</div>
-            </div>
-          
-            <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Γλώσσες</b></p>
-            <p style="text-align:center;">Ελληνικά</p>
-            <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-            </div>
-            <p style="text-align:center;">Αγγλικά</p>
-            <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-round-xlarge w3-teal" style="height:24px;width:90%"></div>
-            </div>
-            
-            <br>
-          </div>
-        </div><br>
-      </div>
-      <!-- End Left Column -->
-
-      <!-- Right Column -->
-      <div class="w3-twothird">
-        <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Επαγγελματική Εμπειρία</h2>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Προγραμματιστής Ιστού</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Φεβ 2023 - Απρ 2024</h6>
-            <p>Κατά τη διάρκεια της πρακτικής μου από τον Φεβρουάριο 2023 έως τον Αύγουστο 2023, απέκτησα πρακτική εμπειρία στον δυναμικό τομέα της ανάπτυξης ιστοσελίδων. Χρησιμοποίησα με επιτυχία τις δεξιότητές μου σε HTML, CSS, JavaScript, PHP, WordPress και Opencart για να συμβάλλω στη δημιουργία και βελτίωση ελκυστικών και λειτουργικών ιστοσελίδων. Καθ' όλη τη διάρκεια αυτής της περιόδου, συνεργάστηκα με μια ταλαντούχα ομάδα για να φέρουμε στη ζωή καινοτόμες ιδέες, εξασφαλίζοντας απρόσκοπτες εμπειρίες χρήστη και αποδοτικές λειτουργίες back-end. Αυτή η πρακτική όχι μόνο βελτίωσε τις τεχνικές μου ικανότητες αλλά και ενίσχυσε το πάθος μου για τη δημιουργία ψηφιακών λύσεων που αφήνουν διαρκή εντύπωση.</p>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Ιστοσελίδες που δημιούργησα!</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Φεβ 2023 - Απρ 2024</h6>
-             <ul>
-              <li data-tooltip="Κάντε κλικ για να ανοίξετε!"><a class="w3-text-teal" onclick="newTab('https://maknep.gr')">https://maknep.gr (WordPress)</a></li>
-              <li><a class="w3-text-teal" onclick="newTab('https://ionianmode.com')" >https://ionianmode.com (WordPress)</a></li>
-              <li><a class="w3-text-teal" onclick="newTab('https://www.pcshop.gr')" >https://www.pcshop.gr (OpenCart)</a></li>
-              <li><a class="w3-text-teal" onclick="newTab('https://eyetech.gr')" >https://eyetech.gr (OpenCart)</a></li>
-              <li><a class="w3-text-teal" onclick="newTab('https://netconnect.gr')" >https://netconnect.gr (OpenCart)</a></li>
-            </ul>
-
-            <hr>
-          </div>
-          
-        <div class="w3-container w3-card w3-white">
-          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Εκπαίδευση</h2>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>ΙΕΚ ΑΚΜΗ Θεσσαλονίκη ®</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Οκτ 2020 - Ιουν 2021</h6>
-             <h1>Περίληψη της Εμπειρίας μου στο ΙΕΚ ΑΚΜΗ</h1>
-      <p>Κατά τη διάρκεια της ενός έτους φοίτησής μου στο ΙΕΚ ΑΚΜΗ, αφιέρωσα τον εαυτό μου στην απόκτηση ολοκληρωμένων γνώσεων και δεξιοτήτων στον τομέα της ανάπτυξης ιστοσελίδων. Εξερεύνησα ένα ευρύ φάσμα βασικών εργαλείων και τεχνολογιών, συμπεριλαμβανομένων:</p>
-      <ul>
-        <li><strong>HTML, CSS & JavaScript:</strong> Μελετώντας αυτές τις γλώσσες προγραμματισμού, απέκτησα βαθιά κατανόηση της δομής και της παρουσίασης των ιστοσελίδων. Δημιούργησα δυναμικές και ελκυστικές ιστοσελίδες που προσφέρουν ομαλή πλοήγηση και απτά αποτελέσματα.</li>
-        <li><strong>PHP:</strong> Με την PHP έχω ασχοληθεί και έχω αποκτήσει πολύ καλές γνώσεις. Έχω μάθει να επηρεάζω δυναμικά το περιεχόμενο στην HTML με την προσθήκη δυναμικών δεδομένων , συνδέσεις με βάσεις δεδομένων , δυναμικά Queries , API , επίσης Αντικειμενοστραφή προγραμματισμό(Classes, Properties, Methods, Instances, Inheritance).</li>
-        <li><strong>Opencart:</strong> Αρίστευσα στη δημιουργία και προσαρμογή καταστημάτων ηλεκτρονικού εμπορίου χρησιμοποιώντας το Opencart. Εξοικειώθηκα με τη δημιουργία προϊόντων, τη διαχείριση αποθεμάτων και την επεξεργασία παραγγελιών, βελτιώνοντας την εμπειρία του πελάτη. Επίσης, εργάστηκα με το πιο διάσημο θέμα στο Opencart, το Journal. Δημιούργησα προσαρμοσμένες επεκτάσεις για υπάρχοντα θέματα του OpenCart.</li>
-      </ul>
-            <hr>
-          </div>
-          
-        </div>
-      </div>
-      <!-- End Right Column -->
-    </div>
-    <!-- End Grid -->
-  </div>
-  <!-- End Page Container -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Βρείτε με στα κοινωνικά δίκτυα</p>
-  <i class="fa fa-facebook-official w3-hover-opacity" style="cursor:pointer;" id="facebook-icon" onclick="newTab('https://www.facebook.com/SteliosLutac')"></i>
-  <i class="fa fa-instagram w3-hover-opacity" style="cursor:pointer;" id="instagram-icon" onclick="newTab('https://www.instagram.com/lutac_/')"></i>
- <p class="w3-small">Αυτή η ιστοσελίδα δημιουργήθηκε από τον Λουτατίδη Στέλιο©</p>
-</footer>
-
-<script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
