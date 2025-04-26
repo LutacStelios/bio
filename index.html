@@ -15,6 +15,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze&family=Niconne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="background-video-container">
+        <video autoplay loop muted playsinline class="background-video">
+          <source src="background_vid.mp4" type="video/mp4">
+        </video>
+    
     <div class="container">
         <div class="profile-card">
             <img src="deluta.jpg" alt="Stelios Loutatidis" class="profile-image">
@@ -29,7 +34,7 @@
         <div class="content">
             <h2 class="text-center fw-bold">About Me</h2>
             <div class="aboutme">
-                <p>Hi! 👋 I'm Stelios, a web developer based in Thessaloniki Greece. I enjoy creating websites that are both visually appealing and functional. I have experience with a variety of web technologies, including HTML, CSS, JavaScript, PHP, and MySQL. I am always looking to learn new things and improve my skills. When I'm not coding, you can find me playing video games 💻, playing billiards 🎱, or spending time with my family.</p>
+                <p>Hi! 👋 I'm Stelios, a web developer based in Thessaloniki Greece. I enjoy creating websites that are both visually appealing and functional. I have experience with a variety of web technologies, including HTML, CSS, JavaScript, PHP, MySQL , ReactJS , Angular. I am always looking to learn new things and improve my skills. When I'm not coding, you can find me playing video games 💻, playing billiards 🎱, or spending time with my family.</p>
             </div>
             <h2 class="text-center fw-bold" style="margin-top: 40px;">Projects</h2>
             <div class="projects">
@@ -49,6 +54,14 @@
                   <img src="efantasy.png" alt="Project 4">
                   <div class="overlay">Made with CustomCMS!</div>
               </div>
+              <div class="project" onclick="window.open('https://ionianmode.com', '_blank')">
+                <img src="ionianmode.png" alt="Project 4">
+                <div class="overlay">Made with WordPress!</div>
+            </div>
+            <div class="project" onclick="window.open('https://maknep.gr', '_blank')">
+                <img src="maknep.png" alt="Project 4">
+                <div class="overlay">Made with WordPress!</div>
+            </div>
             </div>
             <div class="contactinfo">
               <h2 class="fw-bold">Contact Me</h2>
@@ -57,6 +70,7 @@
             </div>
         </div>
     </div>
+</div>
     <script src="index.js"></script>
 </body>
 </html>
