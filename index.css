@@ -41,9 +41,23 @@ body {
     max-width: 800px;
     margin: auto;
 }
+.profile-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    scale: 1.01;
+    transition: 0.3s;
+}
 .profile-card p{
     font-size: large;
 }
+.profile-card p:hover{
+    scale: 1.01;
+    transition: 0.3s;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
 .profile-image {
     width: 250px;
     height: auto;
@@ -62,15 +76,42 @@ body {
 .social-links a i:hover {
    scale: 1.4;
 }
+.close{
+    position: fixed;
+    top: 10px;
+    right: 25px;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.blur {
+    display: none;
+  }
+
+.close:hover {
+    scale: 1.4;
+}
 .content {
     margin-top: 50px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     max-width: 800px;
     margin: 50px auto;
     text-align: left;
     animation: fadeIn 1.5s ease-in-out;
+}
+.content:hover {
+    background: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    scale: 1.01;
+    transition: 0.3s;
+}
+.content p:hover {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 5px;
 }
 .projects {
     display: grid;
@@ -126,9 +167,16 @@ body {
    scale: 1.4;
 }
 .aboutme{
-  text-align: center;
+  text-align: left;
+  padding: 15px;
   font-size: large;
 }
+.aboutme p:hover{
+    text-align: left;
+    scale: 1.01;
+    transition: 0.3s;
+    cursor: pointer;
+  }
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
