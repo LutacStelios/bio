@@ -89,7 +89,7 @@ body {
     padding: 10px;
 }
 .blur {
-    /* display: none; */
+    display: none;
   }
 
 .close:hover {
